@@ -4,7 +4,7 @@
         <field id="tpd3" name="Nome" width="199" order="0"/>
         <field id="tpd4" name="Data d'inizio" width="84" order="1"/>
         <field id="tpd5" name="Data di fine" width="84" order="2"/>
-        <option id="color.recent"><![CDATA[#66ff66]]></option>
+        <option id="color.recent"><![CDATA[#ffcc00 #ff0000 #66ff66]]></option>
     </view>
     <view id="resource-table">
         <field id="0" name="Nome" width="210" order="0"/>
@@ -41,7 +41,7 @@
                 <depend id="10" type="2" difference="0" hardness="Strong"/>
             </task>
             <task id="1" name="Documentazione" color="#8cb6ce" meeting="false" start="2018-09-05" duration="48" complete="0" thirdDate="2018-09-14" thirdDate-constraint="0" expand="true"/>
-            <task id="10" name="Progettazione" color="#8cb6ce" meeting="false" start="2018-09-13" duration="7" complete="0" thirdDate="2018-09-18" thirdDate-constraint="0" expand="true">
+            <task id="10" name="Progettazione" color="#ff0000" meeting="false" start="2018-09-13" duration="7" complete="0" thirdDate="2018-09-18" thirdDate-constraint="0" expand="true">
                 <depend id="36" type="2" difference="4" hardness="Strong"/>
                 <task id="23" name="Analisi del Dominio" meeting="false" start="2018-09-13" duration="1" complete="0" expand="true"/>
                 <task id="16" name="Analisi dei requisiti" meeting="false" start="2018-09-14" duration="1" complete="0" expand="true">
@@ -52,29 +52,41 @@
                 </task>
                 <task id="43" name="Analisi variabili e rischi" color="#8cb6ce" meeting="false" start="2018-09-21" duration="1" complete="0" thirdDate="2018-09-13" thirdDate-constraint="0" expand="true"/>
             </task>
-            <task id="36" name="Implementazione Codice" color="#8cb6ce" meeting="false" start="2018-09-28" duration="9" complete="0" thirdDate="2018-09-03" thirdDate-constraint="0" expand="true">
+            <task id="36" name="Implementazione Codice" color="#ffcc00" meeting="false" start="2018-09-28" duration="16" complete="0" thirdDate="2018-09-03" thirdDate-constraint="0" expand="true">
                 <depend id="50" type="2" difference="0" hardness="Strong"/>
-                <task id="60" name="Creazione Pagina di Benvenuto" color="#8cb6ce" meeting="false" start="2018-09-28" duration="1" complete="0" thirdDate="2018-09-28" thirdDate-constraint="0" expand="true"/>
-                <task id="57" name="Creazione Interfaccia Utente" meeting="false" start="2018-09-28" duration="1" complete="0" expand="true">
-                    <depend id="64" type="2" difference="2" hardness="Strong"/>
+                <task id="115" name="Creazione Macchina Virtuale" meeting="false" start="2018-09-28" duration="4" complete="0" expand="true">
+                    <depend id="60" type="2" difference="1" hardness="Strong"/>
+                    <task id="120" name="Nuova Macchina Virtuale" meeting="false" start="2018-09-28" duration="1" complete="0" expand="true">
+                        <depend id="118" type="2" difference="2" hardness="Strong"/>
+                    </task>
+                    <task id="118" name="Configurazione WebServer" color="#8cb6ce" meeting="false" start="2018-10-03" duration="1" complete="0" thirdDate="2018-10-03" thirdDate-constraint="0" expand="true"/>
+                </task>
+                <task id="60" name="Creazione Pagina di Benvenuto" color="#8cb6ce" meeting="false" start="2018-10-05" duration="1" complete="0" thirdDate="2018-09-28" thirdDate-constraint="0" expand="true">
+                    <depend id="57" type="2" difference="2" hardness="Strong"/>
+                </task>
+                <task id="57" name="Creazione Interfaccia Utente" color="#8cb6ce" meeting="false" start="2018-10-10" duration="1" complete="0" thirdDate="2018-09-28" thirdDate-constraint="0" expand="true">
+                    <depend id="64" type="2" difference="1" hardness="Strong"/>
                     <depend id="78" type="2" difference="0" hardness="Strong"/>
                     <depend id="100" type="2" difference="-1" hardness="Strong"/>
                 </task>
-                <task id="100" name="Verifica della presenza dei dati" color="#8cb6ce" meeting="false" start="2018-09-28" duration="1" complete="0" thirdDate="2018-09-28" thirdDate-constraint="0" expand="true"/>
-                <task id="64" name="Creazione Pagina Riassunto-Dati" color="#8cb6ce" meeting="false" start="2018-10-03" duration="1" complete="0" thirdDate="2018-09-28" thirdDate-constraint="0" expand="true">
+                <task id="100" name="Verifica della presenza dei dati" color="#8cb6ce" meeting="false" start="2018-10-10" duration="1" complete="0" thirdDate="2018-09-28" thirdDate-constraint="0" expand="true"/>
+                <task id="64" name="Creazione Pagina Riassunto-Dati" color="#8cb6ce" meeting="false" start="2018-10-12" duration="1" complete="0" thirdDate="2018-09-28" thirdDate-constraint="0" expand="true">
+                    <depend id="74" type="2" difference="2" hardness="Strong"/>
                     <depend id="78" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="74" name="Codice CSV" meeting="false" start="2018-10-03" duration="6" complete="0" expand="true">
-                    <task id="93" name="Convalida Dati" color="#8cb6ce" meeting="false" start="2018-10-03" duration="3" complete="0" thirdDate="2018-10-03" thirdDate-constraint="0" expand="true"/>
-                    <task id="76" name="Creazione File CSV" color="#8cb6ce" meeting="false" start="2018-10-10" duration="1" complete="0" thirdDate="2018-10-03" thirdDate-constraint="0" expand="true">
+                <task id="74" name="Codice CSV" color="#000000" meeting="false" start="2018-10-17" duration="3" complete="0" thirdDate="2018-10-03" thirdDate-constraint="0" expand="true">
+                    <task id="93" name="Convalida Dati" color="#8cb6ce" meeting="false" start="2018-10-17" duration="3" complete="0" thirdDate="2018-10-03" thirdDate-constraint="0" expand="true">
+                        <depend id="76" type="2" difference="-1" hardness="Strong"/>
+                    </task>
+                    <task id="76" name="Creazione File CSV" color="#8cb6ce" meeting="false" start="2018-10-19" duration="1" complete="0" thirdDate="2018-10-03" thirdDate-constraint="0" expand="true">
                         <depend id="78" type="2" difference="-1" hardness="Strong"/>
                     </task>
-                    <task id="78" name="Scrittura su File CSV" color="#8cb6ce" meeting="false" start="2018-10-10" duration="1" complete="0" thirdDate="2018-09-28" thirdDate-constraint="0" expand="true"/>
+                    <task id="78" name="Scrittura su File CSV" color="#8cb6ce" meeting="false" start="2018-10-19" duration="1" complete="0" thirdDate="2018-09-28" thirdDate-constraint="0" expand="true"/>
                 </task>
             </task>
-            <task id="50" name="Sezione di Testing" color="#8cb6ce" meeting="false" start="2018-10-12" duration="16" complete="0" thirdDate="2018-11-02" thirdDate-constraint="0" expand="true">
-                <task id="106" name="Testing Interno" meeting="false" start="2018-10-12" duration="1" complete="0" expand="true"/>
-                <task id="114" name="Beta-Testing" meeting="false" start="2018-10-12" duration="16" complete="0" expand="true"/>
+            <task id="50" name="Sezione di Testing" color="#8cb6ce" meeting="false" start="2018-10-22" duration="10" complete="0" thirdDate="2018-11-02" thirdDate-constraint="0" expand="true">
+                <task id="106" name="Testing Interno" meeting="false" start="2018-10-22" duration="1" complete="0" expand="true"/>
+                <task id="114" name="Beta-Testing" color="#8cb6ce" meeting="false" start="2018-10-22" duration="10" complete="0" thirdDate="2018-10-22" thirdDate-constraint="0" expand="true"/>
             </task>
         </task>
     </tasks>
