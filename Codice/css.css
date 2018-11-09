@@ -1,0 +1,224 @@
+body{
+    background-color:rgba(128, 243, 138, 0.5);
+}
+div.main{
+    width: 50%;
+    background-color: white;
+    margin:50px;
+    padding: 30px;
+}
+h1.benvenuto{
+    padding: 25px;
+    font-size: 50px;
+    font-family:titleFont;
+}
+h1.benvenuto2{
+    padding: 25px;
+    font-size: 35px;
+    font-family:titleFont;
+}
+@font-face{
+    font-family: titleFont;
+    src: url(media/Font-Exo2/Exo2-SemiBoldItalic.otf);
+}
+.title{
+    font-family: titleFont;
+}
+button{
+    background-color:whitesmoke;
+    border: solid gray;
+    color: black;
+    padding: 30px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin: 80px;
+    border-radius: 20px;
+}
+button:hover{
+    background-color: lightgray;
+    color: black;
+    font-weight: bold;
+}
+
+.myData{
+    text-align: left;
+}
+h4{
+    font-weight: 500;
+    display: inline-block;
+}
+h5{
+    display: inline-block;
+}
+.fewerText{
+    margin-top: 5px;
+    height: 35px;
+    width: 20%;
+    padding: 8px 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+.fewText{
+    margin-top: 5px;
+    height: 35px;
+    width: 40%;
+    padding: 8px 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+.fewTextRadio{
+    margin-top: 5px;
+    height: 35px;
+    width: 40%;
+    padding: 8px 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+.fewTextCheck{
+    margin-top: 5px;
+    width: 100%;
+    padding: 8px 10px;
+    box-sizing: border-box;
+    border: 2px solid rgba(46, 46, 46, 0.63);
+    border-radius: 4px;
+    background-color: #94949436;
+    resize: none;
+    float: right;
+}
+.manyText{
+    width: 100%;
+    height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+.manyTextCheck{
+    width: 100%;
+    height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid rgba(46, 46, 46, 0.63);
+    border-radius: 4px;
+    background-color: #94949436;
+    resize: none;
+}
+.radioButton{
+    margin: 0px 8px;
+}
+.submitButton{
+    border: solid green 2px;
+    border-radius: 10px;
+    padding: 5px 8px;
+    background-color:rgba(128, 243, 138, 0.8);
+    transition-duration: 0.4s;
+    font-size: 23px;
+}
+.submitButton:hover {
+    background-color: #4CAF50;
+    color: black;
+}
+.deleteButton{
+    border: solid red 2px;
+    border-radius: 10px;
+    padding: 5px 8px;
+    background-color:rgba(243, 128, 128, 0.8);
+    transition-duration: 0.4s;
+    font-size: 23px;
+}
+.deleteButton:hover {
+    background-color: #AF4C50;
+    color: black;
+}
+.redText{
+    color: red;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+table{
+	border-collapse: collapse;
+    width: 100%;
+    font-size: 12px;
+}
+tr{
+	border: 1px solid #ddd;
+    padding: 8px;
+}
+td{
+	border: 1px solid #ddd;
+	width: 10%;
+    padding: 8px;
+}
+th{
+	border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.psw{
+    margin-top: 5px;
+    height: 35px;
+    width: 98%;
+    padding: 8px 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+@media only screen and (max-width: 600px) {
+    div.main{
+        width: 90%;
+        background-color: white;
+        margin:0px;
+        padding: 10px;
+    }
+    .fewText, .fewerText{
+        width: 100%;
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+    .fewTextRadio{
+        margin-top: -10px;
+        height: 80px;
+        width: 100%;
+        padding: 8px 10px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        resize: none;
+        display: grid;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .fewTextRadio{
+        margin-top: -10px;
+        height: 80px;
+        width: 100%;
+        padding: 8px 10px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        resize: none;
+        display: grid;
+    }
+}
